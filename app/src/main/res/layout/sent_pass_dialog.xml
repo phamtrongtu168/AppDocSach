@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgr_dialog"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tv_qmk_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bgr_btn_dn"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Quên mật khẩu"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_qmk_dialog"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/txt_email_qmk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_qmk_dialog"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Email send"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_email_qmk"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_xn_qmk"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_email_qmk"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bgr_xn_qmk"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Xác Nhận"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_huy_qmk"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_email_qmk"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bgr_huy_qmk"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Huỷ"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_bottom_KhamPhaSach"
+        android:title="Khám phá sách"
+        android:icon="@drawable/custom_check_home"/>
+    <item android:id="@+id/nav_bottom_profile"
+        android:title="Tài Khoản"
+        android:icon="@drawable/custom_check_profile"/>
+</menu>

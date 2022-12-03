@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34495e"
+    tools:context=".DangNhap_Activity">
+
+    <TextView
+        android:id="@+id/tv_DangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_DangNhap"
+        android:id="@+id/ln_ed">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/white"
+            app:counterTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            app:endIconTint="@color/white"
+            app:startIconTint="#1abc9c"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/txt_name_dn"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_DangNhap"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:hint="PassWord"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            app:endIconMode="password_toggle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/white"
+            app:counterTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:endIconTint="@color/white"
+            app:startIconTint="#1abc9c"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:id="@+id/txt_pass_dn"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/dn_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_ed"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Nhớ mật khẩu?"
+        android:textColor="@color/white"
+        android:textSize="16sp"></CheckBox>
+
+    <TextView
+        android:id="@+id/tv_qmk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_ed"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="20dp"
+        android:text="Quên mật khẩu ?"
+        android:textColor="@color/white"
+        android:textSize="18sp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dn_cb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#e74c3c"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btn_dn"
+        android:id="@+id/ln_fb_gg"
+        android:layout_marginTop="40dp">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/facebook"
+            android:layout_marginEnd="80dp"
+            />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ln_fb_gg"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln_fb_gg"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:text="Bạn chưa có tài khoản"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginRight="30dp"/>
+        <TextView
+            android:id="@+id/tv_dk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln_fb_gg"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:text="Đăng kí tài khoản?"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
